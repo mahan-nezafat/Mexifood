@@ -2,13 +2,16 @@ import React from 'react';
 import Header from './components/header';
 import Menu from './components/menu';
 import Footer from './components/footer';
+import './index.css';
 
 const App = () => {
     return ( 
         <>
-            <Header />
-            <Menu />
-            <Footer />
+           <div className='container'>
+                <Header />
+                <Menu />
+                <Footer />
+           </div>
         </>
     );
 }

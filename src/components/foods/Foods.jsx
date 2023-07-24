@@ -1,8 +1,16 @@
 import React from 'react';
+import Food from './food';
 
-const Foods = () => {
+const Foods = ({foodsData}) => {
     return ( 
         <>
+           <div className="foods">
+                {
+                    foodsData.map((food) => {
+                        return <Food foodData={food} />
+                    })
+                }
+           </div>
         </>
      );
 }
