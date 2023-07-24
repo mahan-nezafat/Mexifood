@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from './components/header';
+import Menu from './components/menu';
+import Footer from './components/footer';
 
 const App = () => {
     return ( 
         <>
-            <h1>Welcome to mexifood!</h1>
+            <Header />
+            <Menu />
+            <Footer />
         </>
     );
 }
